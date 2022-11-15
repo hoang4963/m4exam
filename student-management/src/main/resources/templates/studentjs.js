@@ -132,7 +132,7 @@ function showFormAddStudent(){
         "<br>" +
         "<p>Chon lop hoc:</p>" +
         "<div id=\"classroom\"></div>" +
-        "<button onclick=\"saveStudent()\">Save</button>" +
+        "<button onclick=\"saveStudent()\">Save</button>"
         selectClassroom();
     document.getElementById("display").innerHTML = form;
 }
