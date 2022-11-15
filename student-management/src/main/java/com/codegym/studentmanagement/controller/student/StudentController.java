@@ -74,6 +74,7 @@ public class StudentController {
     }
     @GetMapping("/{name}")
     public ResponseEntity<Iterable<Student>> searchByName(@PathVariable String name){
+        name = "%" + name +"%";
         return new ResponseEntity<>(studentService.searchByName(name),HttpStatus.OK);
     }
 }
